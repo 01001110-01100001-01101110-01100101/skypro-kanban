@@ -7,15 +7,14 @@ export const Column = ({ title, cards }) => {
 				<p>{title}</p>
 			</div>
 			<div className="cards">
-				{cards.map((card) => {
-					return (
-						<Card key={card.id} title={card.title} topic={card.topic} color={"_orange"} />
-						// <Card title="Web Design" />
-						// <Card title="Copywriting" />
-					)
-				})}
-				
-			
+				{cards.map((card) => (
+					<Card 
+						key={card.id} 
+						title={card.title} 
+						topic={card.topic} 
+						data={card.date}
+					/>
+				))}
 			</div>
 		</div>		
     )

@@ -1,9 +1,14 @@
-export const Card = ({ title, color, topic}) => {
+export const Card = ({ title, topic, date }) => {
+	const colors = {
+		"Web Design": "_orange",
+		"Copywriting": "_purple",
+		"Research": "_green"
+	}
     return (
         <div className="cards__item">
 			<div className="cards__card card">
 				<div className="card__group">
-					<div className={`card__theme ${color}`}>
+					<div className={`card__theme ${colors[topic]}`}>
 						<p className={`card__name`}>{topic}</p>
 					</div>
 					<a href="#popBrowse" target="_self">
@@ -30,7 +35,7 @@ export const Card = ({ title, color, topic}) => {
 								</clipPath>
 							</defs>
 						</svg>
-						<p>30.10.23</p>
+						<p>{date}</p>
 					</div>
 				</div>
 			</div>

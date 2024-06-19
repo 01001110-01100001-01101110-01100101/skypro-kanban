@@ -5,14 +5,14 @@ export const tasks = [
         id: 1,
         date: "30.1.2023",
         topic: "Web Design",
-        title: "Название задачи",
+        title: "Выпить чай",
         status: "Без статуса"
     },
     {
         id: 2,
-        date: "30.1.2023",
+        date: "20.2.2023",
         topic: "Copywriting",
-        title: "Название задачи",
+        title: "Сдать домашку",
         status: "Нужно сделать"
     },
     {
@@ -24,15 +24,15 @@ export const tasks = [
     },
     {
         id: 4,
-        date: "30.1.2023",
-        topiic: "Research",
+        date: "12.1.2023",
+        topic: "Research",
         title: "Название задачи",
         status: "Тестирование"
     },
     {
-        id: 4,
-        date: "30.1.2023",
-        topiic: "Research",
+        id: 5,
+        date: "7.8.2023",
+        topic: "Research",
         title: "Название задачи",
         status: "Готово"
     },

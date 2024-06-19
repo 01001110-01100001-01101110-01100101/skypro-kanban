@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const Header = () => {
+export const Header = ({addCard}) => {
 	const [isOpen, setIsOpen] = useState(false)
 	const toggleOpenUser = () => {
 		setIsOpen(!isOpen)
@@ -17,7 +17,7 @@ export const Header = () => {
 						<a href="" target="_self"><img src="images/logo_dark.png" alt="logo"/></a>
 					</div>
 					<nav className="header__nav">
-						<button className="header__btn-main-new _hover01" id="btnMainNew"><a href="#popNewCard">Создать новую задачу</a></button>
+						<button onClick={addCard} className="header__btn-main-new _hover01" id="btnMainNew"><a>Создать новую задачу</a></button>
 						<a className="header__user _hover02" onClick={toggleOpenUser}>Ivan Ivanov</a>
 						{isOpen && (
 							<div className="header__pop-user-set pop-user-set" id="user-set-target">
