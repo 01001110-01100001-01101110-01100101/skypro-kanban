@@ -1,16 +1,22 @@
 import { Card } from "../Card";
-export const Column = ({ title }) => {
+
+export const Column = ({ title, cards }) => {
     return (
         <div className="main__column column">
-							<div className="column__title">
-								<p>{title}</p>
-							</div>
-							<div className="cards">
-								<Card title="Research" />
-								<Card title="Web Design" />
-								<Card title="Copywriting" />
-							
-							</div>
-						</div>		
+			<div className="column__title">
+				<p>{title}</p>
+			</div>
+			<div className="cards">
+				{cards.map((card) => {
+					return (
+						<Card key={card.id} title={card.title} topic={card.topic} color={"_orange"} />
+						// <Card title="Web Design" />
+						// <Card title="Copywriting" />
+					)
+				})}
+				
+			
+			</div>
+		</div>		
     )
 }
