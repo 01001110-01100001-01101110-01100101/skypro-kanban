@@ -12,7 +12,7 @@ export const Column = ({ title, cards }) => {
 						key={card.id} 
 						title={card.title} 
 						topic={card.topic} 
-						data={card.date}
+						date={card.date}
 					/>
 				))}
 			</div>

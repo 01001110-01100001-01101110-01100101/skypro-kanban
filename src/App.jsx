@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="wrapper">
       <Header addCard={addCard}/>
-      {isLoading ? <p className='loader'>Loadng...</p> : <Main cards={cards}/>}
+      {isLoading ? <p className='loader'>Loading...</p> : <Main cards={cards}/>}
     </div>
   )
 }
