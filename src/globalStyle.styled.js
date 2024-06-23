@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     ul li {
-    list    -style: none;
+    list-style: none;
     }
 
     html,
@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const Wrapper = styled.div`
+export const WrapperStyle = styled.div`
     max-width: 100%;
     width: 100vw;
     min-height: 100vh;
@@ -50,6 +50,33 @@ export const Container = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
+`
+
+export const Orange = css`
+    background-color: ${({theme}) => theme.orangeBg};
+    color: ${({theme}) => theme.orangeText};
+`;
+
+export const Green = css`
+    background-color: ${({theme}) => theme.greenBg};
+    color: ${({theme}) => theme.greenText};
+`;
+
+export const Purple = css`
+    background-color: ${({theme}) => theme.purpleBg};
+    color: ${({theme}) => theme.purpleText};
+`;
+
+export const Gray = css`
+    background-color: ${({theme}) => theme.grayBg};
+    color: ${({theme}) => theme.grayText};
+`;
+
+export const themeColor = ($color) => css`
+    ${$color === "Web Design" && Orange}
+    ${$color === "Copywriting" && Purple}
+    ${$color === "Research" && Green}
+    ${!$color && Gray}
 `
 
 export const Hover01 = css`
@@ -65,7 +92,7 @@ export const Hover02 = css`
         &::after {
         border-left-color: #33399b;
         border-bottom-color: #33399b;
-    }
+        }
     }
     
 `
