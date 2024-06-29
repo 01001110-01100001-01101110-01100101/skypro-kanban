@@ -1,13 +1,15 @@
 import { Column } from "../Column";
 import { statusList } from "../../../data";
 import * as S from "./main.styled.js"
+import { Container } from "../../globalStyle.styled";
+
 
 export const Main = ({cards}) => {
 	return (
 		<S.Main>
-			<div className="container">
-				<div className="main__block">
-					<div className="main__content">
+			<Container>
+				<S.MainBlock>
+					<S.MainContent>
 						{statusList.map((status, i) => (
 							<Column 
 								key={i}
@@ -16,9 +18,9 @@ export const Main = ({cards}) => {
 							/>
 						))}
 						
-					</div>
-				</div>
-			</div>
+					</S.MainContent>
+				</S.MainBlock>
+			</Container>
 		</S.Main>
 	);
 };

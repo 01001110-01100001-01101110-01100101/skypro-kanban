@@ -35,6 +35,11 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         color: #000000;
     }
+
+
+
+
+    
 `;
 
 export const WrapperStyle = styled.div`
@@ -50,7 +55,11 @@ export const Container = styled.div`
     width: 100%;
     margin: 0 auto;
     padding: 0 30px;
-`
+    @media screen and (max-width: 495px) {
+        width: 100%;
+        padding: 0 16px;
+    }
+`;
 
 export const Orange = css`
     background-color: ${({theme}) => theme.orangeBg};
@@ -92,6 +101,17 @@ export const Hover02 = css`
         &::after {
         border-left-color: #33399b;
         border-bottom-color: #33399b;
+        }
+    }
+    
+`
+
+export const Hover03 = css`
+    &:hover {
+        background-color: #33399b;
+        color: #FFFFFF;
+        a {
+            color: #FFFFFF;
         }
     }
     

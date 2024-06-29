@@ -1,7 +1,7 @@
 export const light = {
     body: "#EAEEF6",
-    cardBg: "FFFFFF",
-    text: "000000",
+    cardBg: "#FFFFFF",
+    text: "#000000",
     orangeText: "#ff6d00",
     greenText: "#06B16E",
     purpleText: "#9A48F1",
@@ -14,8 +14,8 @@ export const light = {
 
 export const dark = {
     body: "#151419",
-    cardBg: "20202C",
-    text: "FFFFFF",
+    cardBg: "#20202C",
+    text: "#FFFFFF",
     orangeText: "#ffe4c2",
     greenText: "#B4FDD1",
     purpleText: "#E9D4FF",
