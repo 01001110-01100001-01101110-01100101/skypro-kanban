@@ -80,7 +80,7 @@ export const PopUserSetTheme = styled.div`
         line-height: 21px;
         letter-spacing: -0.14px;
     }
-    input[type=checkbox] {
+    input[type="checkbox"] {
         position: relative;
         width: 24px;
         height: 13px;
@@ -88,9 +88,10 @@ export const PopUserSetTheme = styled.div`
         background: #EAEEF6;
         outline: none;
         -webkit-appearance: none;
-            -moz-appearance: none;
-                appearance: none;
-    }&::before {
+        -moz-appearance: none;
+        appearance: none;
+    }
+    input[type="checkbox"]::before {
         content: "";
         position: absolute;
         top: 1px;
@@ -101,7 +102,7 @@ export const PopUserSetTheme = styled.div`
         background-color: #94A6BE;
         transition: 0.5s;
     }
-    input:checked[type=checkbox]::before {
+    input:checked[type="checkbox"]::before {
         left: 12px;
     }
 `;

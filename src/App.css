@@ -800,13 +800,13 @@ body {
   width: 100%;
   display: flex;
 } */
-.main__column {
+/* .main__column {
   width: 20%;
   margin: 0 auto;
   display: block;
-}
+} */
 
-.column__title {
+/* .column__title {
   padding: 0 10px;
   margin: 15px 0;
 }
@@ -816,13 +816,13 @@ body {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-}
+} */
 
-.cards {
+/* .cards {
   width: 100%;
   display: block;
   position: relative;
-}
+} */
 /* .cards__item {
   padding: 5px;
   animation-name: card-animation;
@@ -860,7 +860,7 @@ body {
   font-weight: 600;
   line-height: 10px;
 } */
-.card__btn {
+/* .card__btn {
   width: 24px;
   height: 24px;
   display: flex;
@@ -873,22 +873,22 @@ body {
   height: 4px;
   border-radius: 50%;
   background-color: #94A6BE;
-}
-.card__title {
+} */
+/* .card__title {
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
   color: #000000;
   margin-bottom: 10px;
-}
-.card__content {
+} */
+/* .card__content {
   height: 64px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-}
-.card__date {
+} */
+/* .card__date {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -902,7 +902,7 @@ body {
   line-height: 13px;
   color: #94A6BE;
   letter-spacing: 0.2px;
-}
+} */
 
 @media screen and (max-width: 1200px) {
   /* .main__block {
@@ -913,16 +913,16 @@ body {
   .main__content {
     display: block;
   } */
-  .main__column {
+  /* .main__column {
     width: 100%;
     margin: 0 auto;
     display: block;
-  }
-  .cards {
+  } */
+  /* .cards {
     width: 100%;
     display: flex;
     overflow-y: auto;
-  }
+  } */
   .cards__card {
     width: 220px;
     height: 130px;
