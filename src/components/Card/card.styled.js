@@ -13,10 +13,10 @@ export const CardAnimation = keyframes`
 `;
 
 export const CardsItem = styled.div`
- padding: 5px;
- animation-name: ${CardAnimation};
- animation-duration: 500ms;
- animation-timing-function: linear;
+    padding: 5px;
+    animation-name: ${CardAnimation};
+    animation-duration: 500ms;
+    animation-timing-function: linear;
 `;
 
 export const Card = styled.div`
@@ -83,7 +83,7 @@ export const CardTitle = styled.h3`
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    color: #000000;
+    color: ${({theme}) => theme.text};
     margin-bottom: 10px;
 `;
 

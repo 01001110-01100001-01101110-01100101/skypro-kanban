@@ -2,11 +2,9 @@ import styled from "styled-components";
 import { Hover01, Hover02, Hover03 } from "../../globalStyle.styled";
 
 export const Header = styled.header`
-    .header {
     width: 100%;
     margin: 0 auto;
-    background-color: #FFFFFF;
-    }
+    background-color: ${({theme}) => theme.headerBg};
 `
 
 export const HeaderBlock = styled.div`
@@ -26,7 +24,6 @@ export const HeaderLogo = styled.div`
         width: 85px;
     }
 `
-// стили light/dark добавить
 
 export const HeaderNav = styled.div`
     max-width: 290px;
@@ -45,7 +42,7 @@ export const HeaderPopUserSet = styled.div`
     height: 205px;
     border-radius: 10px;
     border: 0.7px solid rgba(148, 166, 190, 0.4);
-    background: #fff;
+    background: ${({theme}) => theme.headerPopUserSetBg};
     box-shadow: 0px 10px 39px 0px rgba(26, 56, 101, 0.21);
     padding: 34px;
     text-align: center;
@@ -53,7 +50,7 @@ export const HeaderPopUserSet = styled.div`
 `
 
 export const PopUserSetName = styled.p`
-    color: #000;
+    color: ${({theme}) => theme.text};
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -75,7 +72,7 @@ export const PopUserSetTheme = styled.div`
     justify-content: space-between;
     margin-bottom: 30px;
     p {
-        color: #000;
+        color: ${({theme}) => theme.text};
         font-size: 14px;
         line-height: 21px;
         letter-spacing: -0.14px;
@@ -99,7 +96,7 @@ export const PopUserSetTheme = styled.div`
         width: 11px;
         height: 11px;
         border-radius: 50%;
-        background-color: #94A6BE;
+        background-color: ${({theme}) => theme.headerPopUserSetThemeCheckbox};
         transition: 0.5s;
     }
     input:checked[type="checkbox"]::before {
@@ -111,13 +108,13 @@ export const PopUserSetButton = styled.button`
     width: 72px;
     height: 30px;
     background: transparent;
-    color: #565EEF;
     border-radius: 4px;
-    border: 1px solid #565EEF;
+    border: 1px solid ${({theme}) => theme.headerUser};
+    a {
+        color: ${({theme}) => theme.headerUser};
+    }
     ${Hover03}
 `;
-
-//
 
 export const HeaderBtnNew = styled.button`
     width: 178px;
@@ -144,7 +141,7 @@ export const HeaderUser = styled.a`
     justify-content: center;
     font-size: 14px;
     line-height: 20px;
-    color: #565EEF;
+    color: ${({theme}) => theme.headerUser};
 
     &::after {
         content: "";
@@ -152,8 +149,8 @@ export const HeaderUser = styled.a`
         width: 6px;
         height: 6px;
         border-radius: 1px;
-        border-left: 1.9px solid #565EEF;
-        border-bottom: 1.9px solid #565EEF;
+        border-left: 1.9px solid ${({theme}) => theme.headerUser};
+        border-bottom: 1.9px solid ${({theme}) => theme.headerUser};
         transform: rotate(-45deg);
         margin: -6px 0 0 5px;
         padding: 0;
