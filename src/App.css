@@ -1,7 +1,7 @@
-.loader {
+/* .loader {
   text-align: center;
   margin-top: 20px;
-}
+} */
 
 
 /* a,
@@ -46,14 +46,14 @@ body {
   background-color: #F1F1F1;
 } */
 
-.container {
+/* .container {
   max-width: 1260px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
-}
+} */
 
-._hover01:hover {
+/* ._hover01:hover {
   background-color: #33399b;
 }
 
@@ -71,7 +71,7 @@ body {
 }
 ._hover03:hover a {
   color: #FFFFFF;
-}
+} */
 
 .pop-user-set:target,
 .pop-exit:target,

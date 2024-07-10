@@ -35,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
         font-family: "Roboto", Arial, Helvetica, sans-serif;
         color: #000000;
     }
+    .loader {
+        text-align: center;
+        margin-top: 20px;
+    }
 
     
 `;

@@ -16,7 +16,7 @@ export const Header = ({addCard, theme, setTheme}) => {
 			<Container>
 				<S.HeaderBlock>
 					<S.HeaderLogo className="_show _light">
-						<a href="" target="_self"><img src="images/logo.png" alt="logo"/></a>
+						<a href="" target="_self"><img src={theme === "light" ? "images/logo.png" : "images/logo_dark.png"} alt="logo"/></a>
 					</S.HeaderLogo>
 					<S.HeaderLogo className="_dark">
 						<a href="" target="_self"><img src="images/logo_dark.png" alt="logo"/></a>
