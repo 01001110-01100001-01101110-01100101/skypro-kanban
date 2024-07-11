@@ -1,18 +1,26 @@
 import { Column } from "../Column";
-export const Main = () => {
- return (
-	<main className="main">
-		<div className="container">
-			<div className="main__block">
-				<div className="main__content">
-					<Column title="Без статуса" />
-					<Column title="Нужно сделать" />
-					<Column title="В работе" />
-					<Column title="Тестирование" />
-					<Column title="Готово" />
-				</div>
-			</div>
-		</div>
-	</main>
- );
+import { statusList } from "../../../data";
+import * as S from "./main.styled.js"
+import { Container } from "../../globalStyle.styled";
+
+
+export const Main = ({cards}) => {
+	return (
+		<S.Main>
+			<Container>
+				<S.MainBlock>
+					<S.MainContent>
+						{statusList.map((status, i) => (
+							<Column 
+								key={i}
+								title={status} 
+								cards={cards.filter((card) => card.status === status)}
+							/>
+						))}
+						
+					</S.MainContent>
+				</S.MainBlock>
+			</Container>
+		</S.Main>
+	);
 };
